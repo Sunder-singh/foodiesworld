@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>World Of Foodies</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">😝🍔𝕱𝖔𝖔𝖉𝖎𝖊𝖘💝</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">CONTACT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DISHES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/dishes.html">INDIAN</a>
+                        <a class="dropdown-item" href="#">CHINIES</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-success" data-toggle="modal" data-target="#LoginModal">Login</button>
+                <button class="btn btn-success" data-toggle="modal" data-target="#SignupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Foodies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignupModalLabel">Get an Foodies account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Creat Account</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to foodies</h2>
+                    <p>Become a Master Chef at Home</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Food world</h2>
+                    <p>Become a Master Chef at Home</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Snacks Time</h2>
+                    <p>Become a Master Chef at Home</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 ">
+                <h2 class="featurette-heading">Murg Makhani
+                    <span class="text-info">(Butter chicken )</span></h2>
+                <p class="lead">Murg Makhani (butter chicken) is one of the top orders at any
+                    Indian restaurant in the West and for good reason—it is delicious. This sultry poultry dish
+                    tastes great with kaali daal (black lentils), naan, and a green salad.
+                    If you have a well-stocked spice drawer, the only ingredient you may need is kasuri methi
+                    (dried fenugreek leaves). Otherwise, this recipe calls for common ingredients like olive
+                    oil, onion, garlic, ginger, butter, chicken stock, and tomato puree. The chicken is
+                    marinated twice, once in a dry rub and then in a yogurt mixture. This makes the chicken
+                    moist and flavorful, adding to the richness of the dish.</p>
+            </div>
+            <div class="col-md-5 ">
+                <img class="img-fluid" src="thumb1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">POT CHICKEN <span class="text-success">(Instant Pot Butter Chicken)
+                    </span></h2>
+                <p class="lead">If you love murg makhani but don't have a lot of time to marinate the
+                    chicken, make Instant Pot butter chicken. It has all the delicious flavors of butter, cream,
+                    tomatoes, garlic, and spices like garam masala, cumin, ginger, and coriander without the
+                    need for marinating.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="thumb2.jpg" alt="">
+
+            </div>
+        </div>
+
+
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">TANDOORI CHICKEN</strong>
+                            <h3 class="mb-0">Tandoori Chicken </h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">It's hard to find anyone who doesn't fall in love with tandoori
+                                chicken, that famous Indian barbecue chicken recipe. Although traditionally cooked in a
+                                clay
+                                oven, you can prepare the yogurt-marinated chicken in a regular oven (or on the grill).
+                                You
+                                do need to plan ahead, as the coated chicken should sit in the refrigerator for at least
+                                6
+                                hours or overnight. If you prefer, you can sear the marinated chicken cubes first on the
+                                stovetop to achieve that signature tandoori char.</p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-fluid" src="thumb3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Chicken tikka masala</strong>
+                            <h3 class="mb-0"> Chicken tikka masala</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">Chicken tikka masala is a delicious grilled chicken dish with a thick,
+                                creamy
+                                gravy that is unforgettable after the first bite. A tomato-yogurt sauce is spiced with
+                                chili, garlic, ginger, and garam masala, the ubiquitous Indian spice blend. The chicken
+                                is
+                                marinated overnight, grilled, and then gently cooked in a slightly smoky gravy. You will
+                                want to serve this dish over basmati rice with warm naan bread for soaking up the sauce.
+                                For
+                                a quick version, try making it in the Instant Pot.</p>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="img-fluid" src="thumb4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">PALAK PANEER <span class="text-danger">(Spinach and Cottage Cheese)
+                    </span></h2>
+                <p class="lead">If you love murg makhani but don't have a lot of time to marinate the
+                    chicken, make Instant Pot butter chicken. It has all the delicious flavors of butter, cream,
+                    tomatoes, garlic, and spices like garam masala, cumin, ginger, and coriander without the
+                    need for marinating.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="palak.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="row featurette d-flex justify-content-center align-items-center">
+                    <div class="col-md-7 ">
+                        <h2 class="featurette-heading">CHOLE
+                            <span class="text-warning">(Chickpea Curry )</span></h2>
+                        <p class="lead">A classic and easy chole chickpea curry, is a favorite in Northern India and has
+                            become a worldwide sensation.
+                            It's perfect for a crowd, especially if you serve it hot along with fried Indian leavened
+                            bread
+                            like poori or bhatura.
+                            The ingredient list looks more intimidating than the recipe is in reality.
+                            Once you have the chickpeas, onions, and tomatoes, along with garlic and ginger pastes, all
+                            you
+                            need are those common Indian spices that make this cuisine unique.</p>
+                    </div>
+                    <div class="col-md-5 ">
+                        <img class="img-fluid" src="chole.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="card mb-4 shadow-sm">
+                    <h2 class="featurette-heading text-primary"> 04 :- INDIAN POPULAR BREAD</h2>
+                    <img class="img-fluid" src="bread.jpg" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-4">
+                <div class="row featurette d-flex justify-content-center align-items-center">
+                    <div class="col-md-7 ">
+                        <h2 class="featurette-heading text-dark">PARATHAS
+                        </h2>
+                        <p class="lead">Parathas are pan-fried Indian flatbread that are crispy and flaky. They go
+                            well
+                            with most Indian dishes, be it a gravied curry or a dry stir-fry. Parathas do take a few
+                            steps to make but are easy to prepare and definitely worth the time. The more layers you
+                            create by folding the dough over itself, the flakier the flatbread will be. And it
+                            crisps up
+                            from oiling and flipping the bread a few times in a hot pan.</p>
+                    </div>
+                    <div class="col-md-5 ">
+                        <img class="img-fluid" src="parathas.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row featurette d-flex justify-content-center align-items-center">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">ALAOO PARATHA
+                        </h2>
+                        <p class="lead">Aaloo parathas are parathas made with potato. A dough of flour, oil, and
+                            water
+                            is rolled out into a circle, and then a mashed potato mixture is combined into the
+                            pancake
+                            by gently rolling out the flatbread. The paratha is then ready to fry on a griddle.
+                            Aaloo
+                            parathas taste delicious with fresh, thick cream or a knob of unsalted, homemade butter.
+                        </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="img-fluid" src="aloo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="container my-4">
+                    <div class="row featurette d-flex justify-content-center align-items-center">
+                        <div class="col-md-7 ">
+                            <h2 class="featurette-heading text-dark">POORI
+                            </h2>
+                            <p class="lead">Serve this crispy, golden fried Indian flatbread with any
+                                dish—vegetarian or
+                                otherwise—and your favorite pickle. Puffed up like a somewhat deflated ball, the
+                                perfect
+                                poori is light golden in color. With the ingredients being whole wheat flour, water,
+                                salt, and oil, you can whip up some poori without a special trip to the supermarket.
+                            </p>
+                        </div>
+                        <div class="col-md-5 ">
+                            <img class="img-fluid" src="poori.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row featurette d-flex justify-content-center align-items-center">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading">NAAN
+                            </h2>
+                            <p class="lead">Naan is probably the most famous of Indian bread. This fluffy, leavened
+                                Indian flatbread is best served hot, and even though it is ideal for sopping up the
+                                gravy in
+                                curry dishes, it also the perfect accompaniment for other popular dishes like
+                                tandoori
+                                chicken. Although traditionally made in a tandoor (clay oven), you can easily make
+                                naan
+                                in
+                                your oven at home. Just be sure to begin the recipe ahead as the dough needs time to
+                                proof.
+                            </p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img class="img-fluid" src="naan.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-auto featurette d-flex justify-content-center align-items-center">
+                        <div class="card mb-4 shadow-sm">
+                            <h2 class="featurette-heading text-primary">05 :- Indian Finger Foods That Are Surefire Party
+                                Hits</h2>
+                            <img class="img-fluid" src="party.jpg" alt="">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container my-4">
+                        <div class="row featurette d-flex justify-content-center align-items-center">
+                            <div class="col-md-7 ">
+                                <h2 class="featurette-heading text-dark">STEAMED MOMOS
+                                </h2>
+                                <p class="lead">This appetizer from the east Indian state of Sikkim can be filled
+                                    with
+                                    any
+                                    minced meat of your choice; this recipe calls for pork, which is mixed with
+                                    sauteed
+                                    onion, garlic, soy sauce, and chili sauce. They can be steamed or pan-fried and
+                                    are
+                                    usually served with a fiery Sikkimese tomato chutney.</p>
+                            </div>
+                            <div class="col-md-5 ">
+                                <img class="img-fluid" src="momo.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row featurette d-flex justify-content-center align-items-center">
+                            <div class="col-md-7 order-md-2">
+                                <h2 class="featurette-heading">SAMOSAS
+                                </h2>
+                                <p class="lead">For your next party, make mini samosas and serve with gunpowder chutney
+                                    and a yogurt dipping sauce like minty yogurt dip. This popular Indian snack consists
+                                    of crispy pastry filled with meat or mixed vegetables. In this vegetarian recipe, a
+                                    homemade dough of flour and ghee are formed into cones and filled with potatoes and
+                                    seasonings before being deep-fried.
+                                </p>
+                            </div>
+                            <div class="col-md-5 order-md-1">
+                                <img class="img-fluid" src="samosa.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="container my-4">
+                            <div class="row featurette d-flex justify-content-center align-items-center">
+                                <div class="col-md-7 ">
+                                    <h2 class="featurette-heading text-dark">VEGETABLE PEN ROLLS
+                                    </h2>
+                                    <p class="lead">Vegetable pan rolls may take time to make,
+                                        but the result is well worth the effort. You will find
+                                        that your guests (and you!) will have trouble eating
+                                        just one! A pancake made from flour, eggs, milk, and
+                                        water is filled with a mixture of potatoes, peas, and
+                                        tomatoes, along with a variety of spices, rolled up and
+                                        fried until golden brown. Delicious served either hot or
+                                        room temperature with chutney on the side for dipping.
+                                    </p>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <img class="img-fluid" src="roll.jpg" alt="">
+                                </div>
+                                <div class="row featurette d-flex justify-content-center align-items-center">
+                                    <div class="col-md-7 order-md-2">
+                                        <h2 class="featurette-heading">KHASTA KACHORI
+                                        </h2>
+                                        <p class="lead">Delicious khasta kachori (or khasta kachori) is a popular snack
+                                            in Northern and Central India. "Khasta" means "crispy" and that is exactly
+                                            what these lentil-filled pastries are. A flour and ghee pastry is formed
+                                            into a circle and filled with a seasoned lentil mixture; the dough is
+                                            pinched into a purse and then deep fried. Serve with chutney for dipping.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-5 order-md-1">
+                                        <img class="img-fluid" src="kachori.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="container my-4">
+                                    <div class="row featurette d-flex justify-content-center align-items-center">
+                                        <div class="col-md-7 ">
+                                            <h2 class="featurette-heading text-dark">PATTY KABEBS
+                                            </h2>
+                                            <p class="lead">In Indian cuisine, a kebab can refer to both grilled food on
+                                                a skewer as well as a patty made of meat or vegetables that is grilled
+                                                or pan-fried. Galouti kebab with lamb and papaya are the perfect finger
+                                                food when made small enough to eat in a bite or two. Minced lamb is
+                                                combined with flavorful spices and formed into a patty which is
+                                                pan-fried in ghee.
+
+                                                For a vegetarian version, try hara bhara kebab, patties made of
+                                                potatoes, peas, spinach, and spices. Fry in oil, sprinkle with cashews,
+                                                and serve with your favorite chutney.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-5 ">
+                                            <img class="img-fluid" src="patty.jpg" alt="">
+                                        </div>
+
+
+
+
+
+
+                                        <footer class="container">
+                                            <p class="float-right"><a href="#">Back to top</a></p>
+                                            <p>© 2020-2021 Foodies, Inc. · <a href="#">Privacy</a> · <a
+                                                    href="#">Terms</a>
+                                            </p>
+                                        </footer>
+                                        <!-- Optional JavaScript -->
+                                        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                                            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                                            crossorigin="anonymous"></script>
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                                            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                                            crossorigin="anonymous"></script>
+                                        <script
+                                            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                                            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                                            crossorigin="anonymous"></script>
+</body>
+
+</html>
